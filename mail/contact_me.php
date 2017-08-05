@@ -1,9 +1,10 @@
 <?php
 // Check for empty fields
-if(empty($_POST['name'])  		||
+if(empty($_POST['Fname'])  		||
    empty($_POST['email']) 		||
-   empty($_POST['phone']) 		||
-   empty($_POST['message'])	||
+   empty($_POST['pass']) ||
+   empty($_POST['name']||
+
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
 	echo "No arguments Provided!";
