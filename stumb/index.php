@@ -8,10 +8,10 @@
     <title>Takshak 17 ********</title>
     <link rel="shortcut icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="main_travel.css">
 </head>
 <body>
 <!--       <nav class="navbar navbar-default">
@@ -59,7 +59,7 @@
                     <h1>Takshak 17 Travel</h1>
                     <p>"Travel To Track"<br>Travel more and win exciting prizes
 </p>
-                    <div><center>
+                    <div>
                     <form method="post" action="process.php">
                 <span class="icon-mail" id="mail_icon"></span>
                 <input class="form-control" type="email" id="search" name="search" placeholder="Your e-mail id." value="<?php if(isset($_COOKIE['email'])) echo $_COOKIE['email'];?>" required><br/>
@@ -79,7 +79,7 @@
         </div>';
                     ?>
                <br/> <input class="btn btn-primary btn-lg" type="submit" id="submit" name="submit" value="Sign Up/Search">
-            </form></center>
+            </form>
 </div>
                 </div>
             </div>

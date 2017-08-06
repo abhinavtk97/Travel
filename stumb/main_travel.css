@@ -15,7 +15,6 @@ html,body
 }
 #search
 {
-    width: 500px;
     max-width: 90%;
     border: thin;
     background: rgba(255,255,255,.4);
@@ -56,6 +55,13 @@ html,body
     color: #0C2C2F;
     background-color: #FFF;
 }
+
+#submit:hover
+{
+    color: #0C2C2F;
+    background-color: #FFF;
+}
+
 #readmore
 {
     position: absolute;
@@ -166,28 +172,4 @@ a
 #table td
 {
     padding: 4px;
-}
-
-#navstars
-{
-    position: absolute;
-    top: 1px;
-    right: 6px;
-    color: #FFF;
-    z-index: 19361958173578153718;
-}
-#navstars span
-{
-    padding-right: 3px;
-}
-@media (max-width:600px)
-{
-    #main_content2
-    {
-        font-size: 30px;
-    }
-    #tagline
-    {
-        font-size: 20px;
-    }
 }

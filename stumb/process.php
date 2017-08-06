@@ -70,48 +70,59 @@ if(isset($_POST['submit_new']))
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-
-          <!-- For Facebook -->
-      <meta property="og:site_name" content="Leaderboard| Travel To Track |hashtag MACE">
-      <meta property="og:title" content="Leaderboard| Travel To Track |hashtag MACE">
-      <meta property="og:description" content="Leaderboard| Travel To Track |hashtag MACE| Silver Jubilee Celebration|Computer Science and Engineering department| Mar Athanasius College of Engineering, Kothamanglam">
-      <meta property="og:image" content="images/ogimage.png">
-    <meta property="og:type" content="website" />
-
-      <meta name="description" content="Leaderboard| Travel To Track |hashtag MACE| Silver Jubilee Celebration|Computer Science and Engineering department| Mar Athanasius College of Engineering, Kothamanglam">
-    <title>Leaderboard| Travel To Track |hashtag MACE</title>
+      <meta name="description" content="TRAVEL TO WIN">
+    <title>Takshak 17 ********</title>
     <link rel="shortcut icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="animation.css">
-    <link rel="stylesheet" href="/sponsor/style.css">
-    <link rel="stylesheet" href="/sponsor/main.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
     <link rel="stylesheet" href="main_travel.css">
 </head>
 <body>
-    <div id="navstars">
-        <span class="navinside" title="Home"> <a href="index.php">Home</a> |</span>
-        <span class="navinside" title="Leaderboard"> <a href="process.php">Leaderboard</a> |</span>
-        <span class="navinside" title="How To"> <a href="howto.php">HowTo?</a> </span>
+
+
+        <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="glyphicon glyphicon-phone"></i>Takshak Travel</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" role="presentation"> <a href="http://takshak.in">Takshak Home </a> </li>
+        <li role="presentation" title="Home"> <a href="index.php">Home</a> </li>
+        <li role="presentation" > <a href="process.php">Leaderboard</a> </li>
+        <li role="presentation" > <a href="howto.php">HowTo?</a> </li>
+                </ul>
+            </div>
         </div>
-            <div id="blurer"></div>
-            <div id="one"></div>
-            <div id="two"></div>
-            <div id="three"></div>
-            <div id="four"></div>
-            <div id="five"></div>
-    <div id="container1">
-    <div class="padder">
-        <div align="center">
+    </nav>
+
+        <div class="jumbotron hero">
+        <div class="container">
+            <div class="row row-centered">
+
+                <div class="col-xs-5 col-centered" align="center">
+                   <div align="center">
             <form method="post" action="process.php">
                 <span class="icon-mail" id="mail_icon"></span>
-                <input type="email" id="search" name="search" placeholder="Your e-mail id." required value="<?php if(isset($email)) echo $email;?>"><br/>
-                                <?php
+                <input type="email" class="form-control" id="search" name="search" placeholder="Your e-mail id." required value="<?php if(isset($email)) echo $email;?>"><br/>
+                               <?php
                 if(isset($_COOKIE['email']))
-                    echo '<a href="emailremove.php?ref=process">Forget "'.htmlspecialchars($_COOKIE['email']).'".</a>';
+                    echo '<a href="emailremove.php?ref=index">Forget "'.htmlspecialchars($_COOKIE['email']).'".</a>';
                 else
-                    echo '<input type="checkbox" name="remem" value="okay"> Remember this email';
+                    /*echo '<input type="checkbox"  name="remem" class="rem" value="okay">Remember this email';*/
+
+
+                        echo '<div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-success">
+            <input type="checkbox" name="remem" value="okay" autocomplete="off">
+            <span class="glyphicon glyphicon-ok"></span>
+            Remember this email
+          </label>
+        </div>';
                     ?>
-               <br/><input type="submit" id="submit1" name="submit" value="Sign Up/Search with e-mail">
+               <br/><br/><input class="btn btn-primary btn-lg" type="submit" id="submit1" name="submit" value="Sign Up/Search with e-mail">
             </form>
                 <div id="result_sec">
                     <?php
@@ -119,8 +130,8 @@ if(isset($_POST['submit_new']))
                         {    echo 'Do you want to register as a new user with '.$email.'?<br/>';
                              echo '<form method="post" action="process.php">';
                             echo '<input type="hidden" name="search_mail" value='.$email.'>';
-                            echo '<input type="submit" name="submit_new"'.' value="Yes" id="submit1">';
-                            echo '<a href="process.php"><button id="submit1">Cancel</button></a>';
+                            echo '<input class="btn btn-success btn-lg" type="submit" name="submit_new"'.' value="Yes" id="submit1">';
+                            echo '<a href="process.php"><button class="btn btn-primary btn-lg" id="submit1">Cancel</button></a>';
                         }
                         else if($email_success==3)
                         {  echo 'Check your mail for further steps. It may take some seconds to reach you. :)';
@@ -174,7 +185,7 @@ if(isset($_POST['submit_new']))
 
             <div id="leaderboard" align="center">
 
-                <a href="http://hashtagofficial.in" target="_blank"> <img src="/sponsor/images/logo.png" alt="Hashtag" id="logo" width="200"> </a>
+                <a href="http://takshak.in" target="_blank"> <img src="/assets/img/MaceLogo.png" alt="Hashtag" id="logo" width="200"> </a>
                     <br/><span style="font-size:20px">'Travel To Track'</span>
                 <br/>
                 <h3>Leaderboard</h3>
@@ -206,6 +217,18 @@ if(isset($_POST['submit_new']))
             </div>
 
         </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="container1">
+    <div class="padder">
+
     </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -214,6 +237,8 @@ if(isset($_POST['submit_new']))
             $('#leader_loader').load('cron.php');
         });
     </script>
+        <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
 
