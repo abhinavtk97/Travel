@@ -71,7 +71,19 @@ function getTextBetweenTags($tag, $html, $strict=1)
     return $out;
 }
 
-$contents=getSSLPage("https://location.services.mozilla.com/leaders");
+function whenAvailable(name, callback) {
+var interval = 10; // ms
+window.setTimeout(function() {
+    if (window[name]) {
+        callback(window[name]);
+    } else {
+        window.setTimeout(arguments.callee, interval);
+    }
+}, interval);
+}
+
+$contents=getSSLPage("https://location-leaderboard.services.mozilla.com/?iso2=IN");
+whenAvailable("jsLoadFunction", function(t) {
 $html=$contents['content'];
 $html1=str_replace('&lt;script&gt;','&gt;script&lt;',$html);
 $content = getTextBetweenTags('td', $html1);
@@ -127,6 +139,10 @@ foreach($content as $item)
 
 }
 
+
+
+
+    });
 
 mysqli_close($dbc);
 ?>
