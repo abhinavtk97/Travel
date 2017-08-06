@@ -12,22 +12,23 @@ $(function() {
             
             // get values from FORM
             var name = $("input#name").val();
+			var Fname = $("input#Fname").val();
             var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
-            var firstName = name; // For Success/Failure Message
+            var phone = $("input#pass").val();
+            var firstName = Fname; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
-                firstName = name.split(' ').slice(0, -1).join(' ');
+                firstName = Fname.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
-                    phone: phone,
+					Fname: Fname,
+                    pass: pass,
                     email: email,
-                    message: message
+
                 },
                 cache: false,
                 success: function() {
@@ -37,7 +38,7 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                        .append("<strong>Success </strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 
