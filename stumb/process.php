@@ -126,6 +126,7 @@ if(isset($_POST['submit_new']))
             </form>
                 <div id="result_sec">
                     <?php
+
                         if($email_success==2)
                         {    echo 'Do you want to register as a new user with '.$email.'?<br/>';
                              echo '<form method="post" action="process.php">';
@@ -185,10 +186,10 @@ if(isset($_POST['submit_new']))
 
             <div id="leaderboard" align="center">
 
-                <a href="http://takshak.in" target="_blank"> <img src="/assets/img/MaceLogo.png" alt="Hashtag" id="logo" width="200"> </a>
-                    <br/><span style="font-size:20px">'Travel To Track'</span>
+                <a href="http://www.takshak.in" > <img src="assets/img/logo.png" alt="TAKSHAK" id="logo" width="200"> </a>
+                    <br/><span style="font-size:20px">'Travel To Win'</span>
                 <br/>
-                <h3>Leaderboard</h3>
+                <h3 style="color:#FFFFFF;">Leaderboard</h3>
                 <table id="table">
                   <tr><th>Rank</th> <th>Name</th> <th>College</th> <th>Score</th> <th>Global Rank</th></tr>
                 <?php

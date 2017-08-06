@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/user.css">
-    <link rel="stylesheet" href="main_travel.css">
 </head>
 <body>
 <!--       <nav class="navbar navbar-default">
@@ -52,7 +51,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-push-7 phone-preview">
-                    <div class="iphone-mockup"><img src="assets/img/MaceLogo.png">
+                    <div class="iphone-mockup"><img class="unda" src="assets/img/logo.png">
                     </div>
                 </div>
                 <div class="col-md-6 col-md-pull-3 get-it">

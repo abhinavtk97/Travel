@@ -31,7 +31,10 @@
   .hero .phone-preview{
     text-align:center;
   }
+
+
 }
+
 
 .hero .get-it h1, .hero .get-it p{
   color:#fff;
@@ -128,6 +131,18 @@ section.testimonials{
     text-align:left;
   }
 }
+
+    .unda{
+        height: 100%;
+        width: 100%;
+    }
+
+@media (min-width:768px){
+        .unda{height: 170%;
+    width: 170%;}
+}
+
+
 
 .site-footer h5{
   color:inherit;
@@ -237,4 +252,23 @@ section.testimonials{
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
+}
+
+
+#table td
+{
+    padding: 10px;
+    border: 400px;
+    text-align: center;
+}
+#table th
+{
+    padding: 10px;
+    border: 400px;
+    text-align: center;
+}
+
+#leaderboard
+{
+    max-width: 100%;
 }
