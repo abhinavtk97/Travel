@@ -83,7 +83,6 @@ window.setTimeout(function() {
 }
 
 $contents=getSSLPage("https://location-leaderboard.services.mozilla.com/?iso2=IN");
-whenAvailable("jsLoadFunction", function(t) {
 $html=$contents['content'];
 $html1=str_replace('&lt;script&gt;','&gt;script&lt;',$html);
 $content = getTextBetweenTags('td', $html1);
@@ -142,7 +141,6 @@ foreach($content as $item)
 
 
 
-    });
 
 mysqli_close($dbc);
 ?>
