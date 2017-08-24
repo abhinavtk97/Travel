@@ -1,3 +1,4 @@
+<html>
 <?php
 $dbc=mysqli_connect("localhost","root","","moz") or die('could not connect to database.');
     //$dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database.');
@@ -107,3 +108,4 @@ while($i<10)
     mysqli_close($dbc);
 
 ?>
+</html>

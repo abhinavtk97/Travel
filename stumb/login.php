@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 require_once('connectvars.php');
 $dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database.');
 
@@ -109,7 +110,7 @@ else
                 mysqli_query($dbc,$query) or die("Error adding user");
 
                 $query='UPDATE email_verify SET used=1 WHERE email="'.$email.'"';
-                mysqli_query($dbc,$query) or die("Error adding user");
+                mysqli_query($dbc,$query);
 
                 if($remember==1)
                 {
@@ -127,37 +128,32 @@ else
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-
-          <!-- For Facebook -->
-      <meta property="og:site_name" content="Login|Travel To Track |hashtag MACE">
-      <meta property="og:title" content="Login|Travel To Track |hashtag MACE">
-      <meta property="og:description" content="Login|Travel To Track |hashtag MACE| Silver Jubilee Celebration|Computer Science and Engineering department| Mar Athanasius College of Engineering, Kothamanglam">
-      <meta property="og:image" content="images/ogimage.png">
-    <meta property="og:type" content="website" />
-
-      <meta name="description" content="Login|Travel To Track |hashtag MACE| Silver Jubilee Celebration|Computer Science and Engineering department| Mar Athanasius College of Engineering, Kothamanglam">
-    <title>Login| Travel To Track |hashtag MACE</title>
+      <meta name="description" content="TRAVEL TO WIN">
+    <title>Takshak 17 ********</title>
     <link rel="shortcut icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="animation.css">
-    <link rel="stylesheet" href="/sponsor/style.css">
-    <link rel="stylesheet" href="/sponsor/main.css">
-    <link rel="stylesheet" href="main_travel.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/user.css">
 </head>
 <body>
-    <div id="navstars">
-        <span class="navinside" title="Home"> <a href="index.php">Home</a> |</span>
-        <span class="navinside" title="Leaderboard"> <a href="process.php">Leaderboard</a> |</span>
-        <span class="navinside" title="How To"> <a href="howto.php">HowTo?</a> </span>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="glyphicon glyphicon-phone"></i>Takshak Travel</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" role="presentation"> <a href="http://takshak.in">Takshak Home </a> </li>
+        <li role="presentation" title="Home"> <a href="index.php">Home</a> </li>
+        <li role="presentation" > <a href="process.php">Leaderboard</a> </li>
+        <li role="presentation" > <a href="howto.php">HowTo?</a> </li>
+                </ul>
+            </div>
         </div>
-            <div id="blurer"></div>
-            <div id="one"></div>
-            <div id="two"></div>
-            <div id="three"></div>
-            <div id="four"></div>
-            <div id="five"></div>
-    <div id="container1">
-    <div class="padder">
+    </nav>
+            <section class="testimonials">
+
         <div align="center">
          <a href="http://hashtagofficial.in" target="_blank"><img src="/sponsor/images/logo.png" alt="Hashtag" id="logo" width="200"></a>
 
@@ -179,16 +175,16 @@ else
                         ?>
                             <form method="post" action="login.php">
                             <table>
-                                <tr><td>Name: </td><td><input type="text" name="name" class="in_login" placeholder="Your Name Here" maxlength="20" value="<?php if(isset($name)) echo $name;?>" required></td></tr>
-                                <tr><td>College: </td><td><input type="text" name="college" class="in_login" placeholder="Your College Name Here" maxlength="30" value="<?php if(isset($college)) echo $college;?>" required></td></tr>
+                                <tr><td>Name: </td><td><input class="form-control" type="text" name="name" class="in_login" placeholder="Your Name Here" maxlength="20" value="<?php if(isset($name)) echo $name;?>" required></td></tr>
+                                <tr><td>College: </td><td><input class="form-control" type="text" name="college" class="in_login" placeholder="Your College Name Here" maxlength="30" value="<?php if(isset($college)) echo $college;?>" required></td></tr>
                                 <tr><td></td><td style="max-width:300px;">Don't type a valuable password. It may be e-mailed to you in clear text.</td></tr>
-                                <tr><td>Password: </td><td><input type="password" name="password" class="in_login" placeholder="Minimum 8 characters" maxlength="20" required></td></tr>
-                                <tr><td>Retype Password: </td><td><input type="password" name="re_password" class="in_login" placeholder="Retype Password Here" maxlength="20" required></td></tr>
-                                <tr><td>Phone Number: </td><td><input type="text" name="phno" class="in_login" placeholder="Your Phone Number" maxlength="20" value="<?php if(isset($phno)) echo $phno; ?>" required></td></tr>
+                                <tr><td>Password: </td><td><input class="form-control" type="password" name="password" class="in_login" placeholder="Minimum 8 characters" maxlength="20" required></td></tr>
+                                <tr><td>Retype Password: </td><td><input class="form-control" type="password" name="re_password" class="in_login" placeholder="Retype Password Here" maxlength="20" required></td></tr>
+                                <tr><td>Phone Number: </td><td><input class="form-control" type="text" name="phno" class="in_login" placeholder="Your Phone Number" maxlength="20" value="<?php if(isset($phno)) echo $phno; ?>" required></td></tr>
                                 <input type="hidden" name="rand" value="<?php if(isset($_GET['rand'])) echo $_GET['rand']; else if(isset($rand)) echo $rand; ?>">
                                 <input type="hidden" name="email" value="<?php if(isset($_GET['email'])) echo $_GET['email']; else if(isset($email)) echo $email; ?>">
                                 <tr><td></td><td>Remember me: <input type="checkbox" name="remember" class="in_login" <?php if($remember==1) echo 'checked'; ?>></td></tr>
-                                <tr><td></td><td><input type="submit" name="submit" class="in_login" style="cursor:pointer;"></td></tr>
+                                <tr><td></td><td><input class="btn btn-success" type="submit" name="submit" class="in_login" style="cursor:pointer;"></td></tr>
                             </table>
                                 </form>
 
@@ -199,16 +195,6 @@ else
                 }
 
             ?>
-        </div>
-    </div>
-    </div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-57646151-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+                </div>
+    </section>
+    </body></html>

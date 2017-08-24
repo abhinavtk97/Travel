@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+
 require_once('connectvars.php');
 $dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database.');
 $email_success=0;
