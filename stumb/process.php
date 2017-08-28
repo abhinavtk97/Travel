@@ -60,6 +60,23 @@ if(isset($_POST['submit_new']))
             $message_to.='For more information <a href="http://hashtagofficial.in/travel/">Click Here</a><br/><br/>';
             $message_to.='Thanks,<br/>Hashtag Online Team<br/><a href="http://hashtagofficial.in/">
             <img src="http://hashtagofficial.in/mail_footer.png" alt="Silver Jubilee Celebration | CSE Dept."></a>';
+
+
+
+
+
+
+$headers = 'From: webmaster@example.com' . "\r\n" .
+    'Reply-To: webmaster@example.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+mail($email_new, $subject_to, $message_to, $headers);
+
+
+
+
+
+
             require_once('test.php');
 
         }
@@ -73,7 +90,7 @@ if(isset($_POST['submit_new']))
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="TRAVEL TO WIN">
-    <title>Takshak 17 ********</title>
+    <title>Takshak Miles</title>
     <link rel="shortcut icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -86,14 +103,14 @@ if(isset($_POST['submit_new']))
 
         <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="glyphicon glyphicon-phone"></i>Takshak Travel</a>
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.php"><i class="glyphicon glyphicon-phone"></i>Takshak Miles</a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active" role="presentation"> <a href="http://takshak.in">Takshak Home </a> </li>
+                    <li role="presentation"> <a href="http://takshak.in">Takshak Home </a> </li>
         <li role="presentation" title="Home"> <a href="index.php">Home</a> </li>
-        <li role="presentation" > <a href="process.php">Leaderboard</a> </li>
+        <li class="active" role="presentation" > <a href="process.php">Leaderboard</a> </li>
         <li role="presentation" > <a href="howto.php">HowTo?</a> </li>
                 </ul>
             </div>
@@ -104,7 +121,7 @@ if(isset($_POST['submit_new']))
         <div class="container">
             <div class="row row-centered">
 
-                <div class="col-xs-5 col-centered" align="center">
+                <!--<div class="col-xs-5 col-centered" align="center">-->
                    <div align="center">
             <form method="post" action="process.php">
                 <span class="icon-mail" id="mail_icon"></span>

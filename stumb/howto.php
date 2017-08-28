@@ -1,6 +1,6 @@
 <?php
 require_once('connectvars.php');
-$dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database.');
+$dbc=mysqli_connect(DB_HOST2325,DB_USER2325,DB_PASSWORD2325,DB_NAME2325) or die('could not connect to database :((((.');
 
 $email='The Registered E-mail';// Don't change the value,, Used below
 $nick='Your Nickname Provided';
@@ -45,7 +45,7 @@ if($email!='The Registered E-mail')
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="TRAVEL TO WIN">
-    <title>Takshak 17 ********</title>
+    <title>Takshak Miles</title>
     <link rel="shortcut icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -55,15 +55,15 @@ if($email!='The Registered E-mail')
 <body>
     <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="glyphicon glyphicon-phone"></i>Takshak Travel</a>
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.php"><i class="glyphicon glyphicon-phone"></i>Takshak Miles</a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active" role="presentation"> <a href="http://takshak.in">Takshak Home </a> </li>
+                    <li role="presentation"> <a href="http://takshak.in">Takshak Home </a> </li>
         <li role="presentation" title="Home"> <a href="index.php">Home</a> </li>
         <li role="presentation" > <a href="process.php">Leaderboard</a> </li>
-        <li role="presentation" > <a href="howto.php">HowTo?</a> </li>
+        <li class="active" role="presentation" > <a href="howto.php">HowTo?</a> </li>
                 </ul>
             </div>
         </div>
@@ -72,7 +72,7 @@ if($email!='The Registered E-mail')
         <div class="container">
             <div class="row row-centered">
 
-                <div class="col-xs-5 col-centered" align="center">
+              <!--  <div class="col-xs-5 col-centered" align="center">-->
                    <div align="center">
 
                     <h1>HOW TO 'Travel To Track'?<br/><br/></h1>
@@ -85,7 +85,6 @@ if($email!='The Registered E-mail')
         </div>
             </div>
         </div>
-    </div>
         <section class="testimonials">
 <center>
         <div id="howto_main">
@@ -118,7 +117,7 @@ if($email!='The Registered E-mail')
 
             <p>Yay! Now you have downloaded the tool to map your way.<br/>By using the app you are contributing to the open source community :) For more details <a href="https://location.services.mozilla.com" target="_blank">click here</a>.<br/><br/>The following are the next steps to be done for android users.<br/><br/>
             <span class="icon-checkmark"></span> Open the app<br/><br/><br/>
-            <img class ="col-md-12" src="images/screenshot.jpg" alt="screenshot" id="screenshot"><br/><br/>
+            <img class ="col-md-12"  width="100%"src="images/screenshot.jpg" alt="screenshot" id="screenshot"><br/><br/>
             <span class="icon-checkmark"></span> Open up the left panel.<br/><br/>
             <span class="icon-checkmark"></span> Click the settings icon<br/><br/>
 
