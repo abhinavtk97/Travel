@@ -5,7 +5,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="description" content="TRAVEL TO WIN">
-    <title>Takshak 17 ********</title>
+    <title>Takshak Miles</title>
     <link rel="shortcut icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/sponsor/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -33,13 +33,13 @@
 
     <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="glyphicon glyphicon-phone"></i>Takshak Travel</a>
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><i class="glyphicon glyphicon-phone"></i>Takshak Miles</a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active" role="presentation"> <a href="http://takshak.in">Takshak Home </a> </li>
-        <li role="presentation" title="Home"> <a href="index.php">Home</a> </li>
+                    <li  role="presentation"> <a href="http://takshak.in">Takshak Home </a> </li>
+        <li class="active" role="presentation" title="Home"> <a href="index.php">Home</a> </li>
         <li role="presentation" > <a href="process.php">Leaderboard</a> </li>
         <li role="presentation" > <a href="howto.php">HowTo?</a> </li>
                 </ul>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-md-pull-3 get-it">
-                    <h1>Takshak 17 Travel</h1>
+                    <h1>Takshak Miles</h1>
                     <p>"Travel To Track"<br>Travel more and win exciting prizes
 </p>
                     <div>
