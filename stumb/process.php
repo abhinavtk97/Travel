@@ -50,7 +50,11 @@ if(isset($_POST['submit_new']))
         {
             $query='INSERT INTO email_verify (`email`,`rand`) VALUES ("'.$email_new.'","'.$rand.'");';
             mysqli_query($dbc,$query);
-            $subject_to='Travel To Track Confirmation';
+            echo $rand;
+
+
+
+           $subject_to='Travel To Track Confirmation';
             $email_to=$email_new;
             $message_to='Hi,<br/> We have recieved your request to sign in for "Travel To Track", ';
             $message_to.='an online competition to travel and collect points through <strong>Mozilla Stumbler</strong>, ';
@@ -66,8 +70,8 @@ if(isset($_POST['submit_new']))
 
 
 
-$headers = 'From: webmaster@example.com' . "\r\n" .
-    'Reply-To: webmaster@example.com' . "\r\n" .
+$headers = 'From: abhinavtk97@gmail.com' . "\r\n" .
+    'Reply-To: abhinavtk97@gmail.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 mail($email_new, $subject_to, $message_to, $headers);
@@ -76,8 +80,7 @@ mail($email_new, $subject_to, $message_to, $headers);
 
 
 
-
-            require_once('test.php');
+            //require_once('test.php');
 
         }
     }
